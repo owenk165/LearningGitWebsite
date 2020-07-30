@@ -1,0 +1,118 @@
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+
+body{
+	background-color : #fcfbf6;
+	color:#611ec0;
+}
+
+.navigation_bar{
+	width:100%;
+	top:0vw;
+	left:0vw;
+	position:fixed;
+	font-family:"Arial";
+	font-size:1vw;
+	font-weight : bold;
+	list-style-type:none; 
+	overflow : hidden;
+	background-color : transparent;
+	z-index:100;
+	box-shadow: 0vw 0vw 0.3vw 0vw #6d6564;
+}
+
+.navigation_bar li{
+	float : left;
+}
+
+
+.navigation_bar li a{
+	color: #611ec0;
+	display : block;
+	text-align : center;
+	padding : 2vw;
+	text-decoration : none;
+}
+
+
+.navigation_bar li a:hover{
+	color:#e65988!important;
+	text-decoration:underline;
+}
+
+.img_home{
+	max-height:3vw; 
+	max-width:3vw;
+}
+
+.home_style{
+	padding:1vw !important;
+	margin-right: 38vw !important;
+	text-align:center;
+}
+
+#hovered_home{
+display:none;
+}
+
+#home:hover span[id="initial_home"] {
+  display: none;
+}
+#home:hover span[id="hovered_home"] {
+  display: block;
+}
+
+.img_style_index {
+	left:50%;
+	top:20%;
+	position:absolute;
+}
+
+.bg_index {
+	position : absolute;
+	width:1024px;
+	height:688px;
+}
+
+.text_index{
+	position:relative;
+	z-index:1;
+	left:15%;
+	top:30vw;
+	color:#611ec0;
+	font-weight:bold;
+	font-size:25px;
+	font-family:"Arial";
+}
+
+.text_index p{
+	margin:0;
+}
+.aboutMe_btn{
+	font-weight:bold;
+	font-size:30px;
+	text-decoration : none;
+	width:24vw;
+	border: 2px solid #611ec0;
+	background-color:transparent;
+	color : #611ec0;
+	transition-duration : 1s;
+	cursor : pointer;
+	text-align:center;
+	margin:1% 2px 1% 5%;
+	padding:10px 5px 10px 5px;
+	border-radius:5px;
+	
+}
+
+.aboutMe_btn:hover{
+	color : white;
+	background-image :linear-gradient(#611ec0,#8647e0);
+	border: 2px solid transparent;
+}
+
+.myEdu_link{
+	margin-left:12%;
+	font-size:15px;
+	font-weight:normal;
+	color:blue;
+}
