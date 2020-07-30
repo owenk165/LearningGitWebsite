@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/contactMe.js"></script>
+<style>
+body{
+	background-color:#FFF;
+	background-image:url('img/contact.png');
+	background-repeat: no-repeat;
+	background-attachment:fixed; <!-- I set attachment as fixed so the picture remain intact when scrolling down -->
+}
+</style>
+<body>
+<nav class="navigation_bar">
+	<li><a href="index.html" class="home_style"><span id="home">
+										<span id="initial_home"><img src="img/homeicon.png" class="img_home"></span>
+										<span id="hovered_home"><img src="img/homeicon_hovered.png" class="img_home"></span>
+	</span></a></li>
+	<li><a href="aboutMe.php">ABOUT ME</a></li>
+	<li><a href="myEducation.php">MY EDUCATION</a></li>
+	<li><a href="myInterest.php">MY INTEREST</a></li>
+	<li><a href="myDiary.php">MY DIARY</a></li>
+	<li><a href="">CONTACT ME</a></li>
+</nav>
+
+<div id="contactDiv">
+	<h1>Get in touch!</h1>
+	<div id="subcaptionContactDiv">
+		<h4>I'll be sure to answer your questions!</h4>
+		<h4>Or send me a message below!</h4>
+	</div>
+	<div id="picNtitle"><image src="img/nameIcon.png" alt="" class="miniContactIcon"><h3>Khew Li Tien</h3></div>
+	<div id="picNtitle"><image src="img/phoneIcon.png" alt="" class="miniContactIcon"><h3>011-31841392</h3></div>
+	<div id="picNtitle"><image src="img/addressIcon.png" alt="" class="miniContactIcon"><h3>Harmonica Walk, Taman Harmonica, 43000 Kajang, Selangor</h3></div>
+	<div id="picNtitle"><image src="img/emailIcon.png" alt="" class="miniContactIcon"><h3>khewlitien@gmail.com</h3></div>
+	<div id="socialMedias">
+		<a href="//twitter.com/"><image src="img/twIcon.png" alt="" class="mediumContactIcon"></a>
+		<a href="//facebook.com/"><image src="img/fbIcon.png" alt="" class="mediumContactIcon"></a>
+		<a href="//linkedin.com/"><image src="img/linkedInIcon.png" alt="" class="mediumContactIcon"></a>
+	</div>
+</div>
+
+<div id="formDiv">
+	<h1 id="contactHeading">Send me a message here</h1>
+	<form method="POST" class="contact_form" id="contactForm" action="<?=$_SERVER['PHP_SELF'];?>">
+            <input type="text" id="nameBox" name="nameBox" onKeyUp="nameValidation();" placeholder="Name"><br>
+			<p id="warningName" class="warning">&nbsp;</p>
+			
+            <input type="text" id="emailBox" name="emailBox" onKeyUp="emailValidation();" placeholder="Email"><br>
+			<p id="warningEmail" class="warning">&nbsp;</p>
+			
+            <input type="text" id="titleBox" name="titleBox" onKeyUp="titleValidation();" placeholder="Title" ><br>
+			<p id="warningTitle" class="warning">&nbsp;</p>
+			
+			<textarea rows="6" cols="60" id="msgBox" name="msgBox" form="contactForm" onKeyUp="msgValidation();" placeholder="Message" ></textarea>
+			<p id="warningMsg" class="warning">&nbsp;</p>
+			
+            <input type="submit" value="Contact me!" class="contact_button" id="contact_button" name="contactForm" disabled ><br>
+    </form>
+</div>
+</body>
+</html>

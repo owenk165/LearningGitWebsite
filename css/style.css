@@ -116,3 +116,118 @@ display:none;
 	font-weight:normal;
 	color:blue;
 }
+
+/*--------- contact me ----------------- */
+#contactDiv{
+	background-color:rgba(243,241,231,0.7);
+	word-warp:break-word;
+	width:400px;
+	top : 2vw;
+	font-family:"Spartan",Arial;
+	color:#50545A;
+	margin-left:5vw;
+	margin-top:10vw;
+	border-radius:5px;
+	padding:3px 0 3px 3vw;
+}
+
+#contactDiv h1{
+	margin-left:-1vw;
+	margin-bottom:0px;
+	font-size:50px;
+}
+
+#subcaptionContactDiv h4{
+	display:inline-block;
+	margin:0;
+}
+
+#socialMedias{
+	display:flex;
+	flex-direction:row;
+	cursor:pointer;
+}
+.miniContactIcon{
+	width:20px;
+	height:20px;
+}
+
+.mediumContactIcon{
+	margin-right:1vw;
+	margin-bottom:1vw;
+	width:100px;
+	height:100px;
+}
+
+#contactDiv h3{
+	padding:0 0 0 1vw;
+	margin:0;
+}
+
+#picNtitle{
+	display:flex;
+	flex-direction:row;
+	margin-top:2vw;
+	margin-bottom:1vw;
+}
+
+#formDiv{
+	box-shadow:0px -11px 8px -10px #FFF;
+	position : relative;
+	border-radius:10px;
+	background-image:linear-gradient(to bottom, #F4D0DE, #FACBB1);
+	display: block; 
+	text-align:center;
+	width : 100%;
+	height : auto;
+	top : 2vw;
+	padding-bottom:2vw;
+}
+
+#formDiv h1{
+	padding-bottom:1vw;
+	font-size:50px;
+	font-family:'Spartan',Arial;
+}
+
+#formDiv input{
+	height:6%;
+	width : 50%;
+	margin-top :2px;
+	border-radius:5px;
+	border : 1px solid #716040;
+}
+
+#formDiv textarea{
+	width:50%;
+	border : 1px solid #716040;
+	border-radius:5px;
+}
+
+::placeholder{
+	text-align:center;
+}
+
+.contact_button:disabled{
+	color:red;
+	background-color:#ccc;
+	border:1px solid #ccc;
+}
+
+.contact_button:disabled:hover{
+	color:red;
+	background-color:#ccc;
+	border:1px solid #ccc;
+}
+.contact_button{
+	font-size:10px;
+	font-weight:bold;
+	color:#611ec0;
+	background-color:#fff;
+	transition-duration:1s;
+	cursor:pointer;
+}
+
+.contact_button:hover{
+	background-color:transparent;
+}
